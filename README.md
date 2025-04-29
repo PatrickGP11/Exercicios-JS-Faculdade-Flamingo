@@ -1,1 +1,1 @@
-# Exercicios-JS-Faculdade-Flamingo
+# exercicios-js-fafla-com-erros

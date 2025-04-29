@@ -1,13 +1,13 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: #FFF;
 }
 
 body {
-    background-color: #000;
+    background-color: #222;
 }
 
 main {
@@ -15,7 +15,7 @@ main {
     margin: auto;
 }
 
-h1 {
+h1{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -30,10 +30,10 @@ button {
     transition: .3s;
 }
 
-button:hover {
+button:hover{
     transform: scale(1.1);
     background-color: #444;
-    border: 1px solid #666;
+    border: 1px solid #666 ;
 }
 
 .container {
