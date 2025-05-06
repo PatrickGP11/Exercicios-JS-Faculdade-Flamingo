@@ -222,11 +222,19 @@ const btns = [
   {
     nome: "Ex. 23 - Número primo",
     func: () => {
-      const num = Number(prompt("Digite um número:"));
-      let primo = num < 1;
-      alert(primo ? "É primo" : "Não é primo");
+    
+      if (n <= 1) return false;
+      if (n === 2) return true;
+      if (n % 2 === 0) return false;
+    
+      const limite = Math.sqrt(n);
+      for (let i = 3; i <= limite; i += 2) {
+        if (n % i === 0) return false;
+      }
+    
+      return true;
+    }
     },
-  },
   {
     nome: "Ex. 24 - Inverter nome",
     func: () => {
@@ -269,7 +277,7 @@ const btns = [
     func: () => {
       const lista = [3, 7, 9, 12, 15];
       const busca = prompt("Digite um número para buscar:");
-      alert(lista.includes(busca) ? "Encontrado" : "Não encontrado");
+      alert(lista.includes() ? "Encontrado" : "Não encontrado");
     },
   },
   {
@@ -358,7 +366,7 @@ const btns = [
     nome: "Ex. 37 - Multiplicação acumulada",
     func: () => {
       let total = 0;
-      for (let i = 0; i < 4; i++) total *= Number(prompt(`Número ${i + 1}:`));
+      for (let i = 0; i < 4; i++) total *= Number(prompt(`Número ${i * 1}:`));
       alert(`Multiplicação total: ${total}`);
     },
   },
